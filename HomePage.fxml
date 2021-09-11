@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="642.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewFx.HomePageController">
+   <children>
+      <BorderPane layoutX="7.0" layoutY="4.0" prefHeight="635.0" prefWidth="887.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="642.0" prefWidth="361.0" style="-fx-background-color: teal;" styleClass="sidebarl" stylesheets="@homepage.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="85.0" prefWidth="361.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="155.0" text="Seller/Exporter">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="53.0" prefWidth="235.0" text="Meat Market">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="124.0" prefWidth="361.0">
+                     <children>
+                        <TextField prefHeight="37.0" prefWidth="288.0" promptText="type_here_to_search">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="79.0" text="Search" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="155.0" prefWidth="361.0">
+                     <children>
+                        <Label prefHeight="44.0" prefWidth="185.0" text="    Beef">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/Capture4.PNG" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="361.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="360.0" text="     Price/KG            550 Taka   ">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="41.0" prefWidth="361.0" styleClass="sidebar">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="160.0" text="   .KG" textFill="#fc0e0e">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <ComboBox prefHeight="34.0" prefWidth="195.0" promptText="Select Amount" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="361.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="361.0" text="Add to chart">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="438.0" layoutY="28.0" text="PROFILE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="399.0" layoutY="62.0" mnemonicParsing="false" onAction="#onClickViewProfile" text="Set Your Profile" />
+                  <Button layoutX="21.0" layoutY="62.0" mnemonicParsing="false" onAction="#onClickViewUploadSec" prefHeight="12.0" prefWidth="97.0" text="Upload For Sell" />
+                  <Label layoutX="21.0" layoutY="30.0" text="Upload the details of your Product">
+                     <font>
+                        <Font name="Dubai Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="125.0" text="View Other Seller's Profile">
+                     <font>
+                        <Font name="Dubai Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="349.0" layoutY="129.0" text="Account Information">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="366.0" fitWidth="450.0" layoutX="27.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/Capture4.PNG" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="210.0" layoutY="595.0" mnemonicParsing="false" onAction="#onClickBackToHome" prefHeight="12.0" prefWidth="97.0" text="Back" />
+                  <Button layoutX="400.0" layoutY="160.0" mnemonicParsing="false" onAction="#onClickViewAccount" prefHeight="12.0" prefWidth="97.0" text="View Account" />
+                  <Button layoutX="21.0" layoutY="160.0" mnemonicParsing="false" onAction="#viewOthersProduct" prefHeight="25.0" prefWidth="54.0" text="View" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

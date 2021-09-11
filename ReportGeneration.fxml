@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="642.0" prefWidth="901.0" style="-fx-background-color: #F9E79F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewFx.ReportGenerationController">
+   <children>
+      <Label layoutX="314.0" layoutY="24.0" prefHeight="35.0" prefWidth="273.0" text="Report Generation Page" textFill="#ab0202">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" layoutX="89.0" layoutY="67.0" prefHeight="485.0" prefWidth="720.0" title="Sell Chart" />
+      <Button fx:id="loadPieChartButton" layoutX="391.0" layoutY="574.0" mnemonicParsing="false" onAction="#loadPieChartButtonOnClick" style="-fx-background-color: yellow;" text="Load Sell Chart" textFill="#7c0000">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="809.0" layoutY="576.0" mnemonicParsing="false" onAction="#backToSupplierHomeOnClick" style="-fx-background-color: yellow;" text="Back" textFill="RED">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

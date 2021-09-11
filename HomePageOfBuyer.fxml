@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="635.0" prefWidth="887.0" styleClass="sidebarl" stylesheets="@homepage.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewFx.HomePageOfBuyerController">
+   <left>
+      <VBox prefHeight="642.0" prefWidth="361.0" styleClass="sidebarl" stylesheets="@homepage.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="85.0" prefWidth="361.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="130.0" text="Welcome Buyer">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="53.0" prefWidth="283.0" text="Find Your Meat">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="124.0" prefWidth="361.0">
+               <children>
+                  <TextField prefHeight="37.0" prefWidth="288.0" promptText="type_here_to_search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="79.0" text="Search">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="155.0" prefWidth="361.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="185.0" text="    Beef">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/Capture4.PNG" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="361.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="360.0" text="     Price/KG            550 Taka   ">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="361.0" styleClass="sidebar">
+               <children>
+                  <Label prefHeight="32.0" prefWidth="160.0" text="   .KG" textFill="#fc0e0e">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="ComboBox" prefHeight="34.0" prefWidth="195.0" promptText="Select Amount" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="361.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="361.0" text="Add to chart">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#onClickGoToComplainBox" prefHeight="31.0" prefWidth="361.0" style="-fx-background-color: #E59866;" text="Complain Box" textFill="#750909">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="635.0" prefWidth="520.0">
+               <children>
+                  <HBox prefHeight="69.0" prefWidth="520.0" styleClass="sidebar" stylesheets="@homepage.css">
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="113.0" text="Free Delivery" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="20.0" prefHeight="27.0" prefWidth="120.0" text="Over 10 Orders" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="58.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar">
+                           <image>
+                              <Image url="@Image/ic_cart.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="61.0" fitWidth="73.0" layoutX="233.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/ic_delivery.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="108.0" layoutX="233.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar">
+                           <image>
+                              <Image url="@Image/ic_cart.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="61.0" fitWidth="73.0" layoutX="291.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/ic_delivery.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="130.0" prefWidth="520.0" styleClass="sidebar" stylesheets="@homepage.css">
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="68.0" text="Mutton" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="140.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/Capture5.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="126.0" fitWidth="167.0" layoutX="131.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/Capture4.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="40.0" layoutY="20.0" prefHeight="27.0" prefWidth="91.0" text="   Beef" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="500.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="27.0" prefWidth="249.0" text="Add">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button contentDisplay="RIGHT" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="249.0" text="Add">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="130.0" prefWidth="520.0" styleClass="sidebar" stylesheets="@homepage.css">
+                     <children>
+                        <Label text="Desi Chicken" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="100.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@Image/Capture6.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="89.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/Capture7.PNG" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Poultry" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="520.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="238.0" text="Add">
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="259.0" text="Add">
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="106.0" prefWidth="494.0" styleClass="sidebar" stylesheets="@homepage.css">
+                     <children>
+                        <Button fx:id="BackToLogin" mnemonicParsing="false" onAction="#onClickBackToLoginPage" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #E59866;" text="Back" textFill="#750909">
+                           <HBox.margin>
+                              <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="BackToLogin1" layoutX="275.0" layoutY="60.0" mnemonicParsing="false" onAction="#onClickNewProductList" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: #E59866;" text="New Product List" textFill="#750909">
+                           <font>
+                              <Font name="Britannic Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</BorderPane>

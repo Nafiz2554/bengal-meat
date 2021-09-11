@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="665.0" prefWidth="951.0" styleClass="sidebar" stylesheets="@homepage.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="NewFx.RegistrationPageController">
+   <children>
+      <VBox layoutX="14.0" layoutY="2.0" prefHeight="636.0" prefWidth="320.0" />
+      <VBox layoutX="382.0" layoutY="6.0" prefHeight="720.0" prefWidth="569.0" styleClass="sidebarl" stylesheets="@homepage.css">
+         <children>
+            <Label prefHeight="34.0" prefWidth="571.0" styleClass="sidebarl" stylesheets="@homepage.css" text="                Registration" textFill="#510a0a">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="225.0" text="       Type Username">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" promptText="type_username">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="10.0" layoutY="77.0" prefHeight="17.0" prefWidth="225.0" text="       Type Password">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" promptText="type_password">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label layoutX="10.0" layoutY="107.0" prefHeight="17.0" prefWidth="225.0" text="       Confirm Password">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="confirmPassword" promptText="confirm_password">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label layoutX="10.0" layoutY="137.0" prefHeight="17.0" prefWidth="225.0" text="       Email-Address">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailId" promptText="type_email">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Signin As">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="comboBox" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Button mnemonicParsing="false" onAction="#signUpOnClick" text="Signup" textFill="#680808">
+               <VBox.margin>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label text="Already have an account ?" textFill="#8a0707">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#logInOnClick" text="Login">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="50.0" layoutY="539.0" mnemonicParsing="false" onAction="#backToHomeOnClick" prefHeight="20.0" prefWidth="106.0" text="Back ToHome">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

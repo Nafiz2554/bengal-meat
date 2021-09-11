@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="642.0" prefWidth="901.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="NewFx.NewProductListController">
+   <children>
+      <Label layoutX="386.0" layoutY="22.0" text="New Product List">
+         <font>
+            <Font name="Bauhaus 93" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="90.0" text="Beef">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="108.0" text="Product Id: 1234">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="62.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Meat-trends-market-prospers-in-face-of-pandemic.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="117.0" layoutY="288.0" text="Price: 650 Tk">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="141.0" layoutY="420.0" mnemonicParsing="false" text="Add">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="167.0" fitWidth="174.0" layoutX="309.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/mutton-meat-1503821376-3250011.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="326.0" layoutY="90.0" text="Mutton">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="108.0" text="Product Id: 1235">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="327.0" text="Price: 850 Tk">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="362.0" layoutY="420.0" mnemonicParsing="false" text="Add">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="167.0" fitWidth="180.0" layoutX="504.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/1617826845-desi-chicken.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="527.0" layoutY="90.0" text="Desi Chicken">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="515.0" layoutY="108.0" text="Product Id: 1236">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="559.0" layoutY="327.0" text="Price: 550 Tk">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="573.0" layoutY="420.0" mnemonicParsing="false" text="Add">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="154.0" fitWidth="167.0" layoutX="710.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Capture7.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="710.0" layoutY="90.0" text="Poultry">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="710.0" layoutY="108.0" text="Product Id: 1237">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="748.0" layoutY="279.0" text="Price: 350 Tk">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="772.0" layoutY="420.0" mnemonicParsing="false" text="Add">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="104.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickGoHome" text="Home" textFill="#e10707" />
+      <Button layoutX="768.0" layoutY="39.0" mnemonicParsing="false" text="Chart" textFill="#bf0000" />
+   </children>
+</AnchorPane>

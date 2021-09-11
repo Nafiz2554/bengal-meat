@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="901.0" style="-fx-background-color: #400E16;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewFx.BengalController">
+   <children>
+      <Label layoutX="324.0" layoutY="20.0" prefHeight="40.0" prefWidth="281.0" text="Welcome to Bengal Meat" textFill="WHITE">
+         <font>
+            <Font name="Bernard MT Condensed" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="23.0" layoutY="79.0" mnemonicParsing="false" onAction="#onClickGoHome" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #401685;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="107.0" layoutY="79.0" mnemonicParsing="false" onAction="#onClickViewNews" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: #401685;" text="News" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="231.0" layoutY="79.0" mnemonicParsing="false" onAction="#onClickGoToNewProductList" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #401685;" text="Product" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="539.0" layoutY="79.0" mnemonicParsing="false" onAction="#onClickGoToGallery" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #401685;" text="Gallery" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="622.0" layoutY="79.0" mnemonicParsing="false" onAction="#onClickGoRegistrationPage" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #401685;" text="Register" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="777.0" layoutY="79.0" mnemonicParsing="false" onAction="#onClickGoContactInfoPage" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: #401685;" text=" Contact Us" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="387.0" layoutY="145.0" prefHeight="30.0" prefWidth="91.0" text="About US" textFill="#ff6969">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="709.0" layoutY="79.0" mnemonicParsing="false" onAction="#onClickGoLoginPage" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: #401685;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="412.0" fitWidth="765.0" layoutX="72.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Capture.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
